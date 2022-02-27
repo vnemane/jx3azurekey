@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        vnemane/golanghttpdemo: true
         vnemane/jx3azurekey: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        vnemane/golanghttpdemo: merge
         vnemane/jx3azurekey: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - vnemane/jx3azurekey
+        - vnemane/golanghttpdemo
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - vnemane/jx3azurekey
+        - vnemane/golanghttpdemo
       target_url: http://lighthouse-jx.20.40.125.83.nip.io/merge/status
 kind: ConfigMap
 metadata:
