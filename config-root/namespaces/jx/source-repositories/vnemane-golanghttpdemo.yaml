@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: vnemane
+    provider: github
+    repository: golanghttpdemo
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: vnemane-golanghttpdemo
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/vnemane/golanghttpdemo.git
+  org: vnemane
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: golanghttpdemo
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/vnemane/golanghttpdemo
